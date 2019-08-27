@@ -1,0 +1,139 @@
+<!-- Container start-->
+<div class="container">
+
+  <div class="row"> <!-- header-->
+    <div class="col-md-12 login_header"></div>
+  </div>
+
+
+<div class="row">
+  <form #f="ngForm" (ngSubmit)="submit(f)"> 
+   <div class="col-md-12"   style="padding-top: 10px; ">
+  <div class="row">
+      <!-- Name field-->
+      <div class="col-md-3"></div>
+      <div class="col-md-1"><span> <i class="fa fa-user usr " ></i></span></div>
+      <div class="col-md-4">
+        <div class="form-group">
+            <input type="text"
+                required
+                ngModel 
+                name="name"
+                #name="ngModel"
+                (change)="log(name)"
+                class="form-control text"
+                id="name"
+                placeholder="Full Name">     
+        </div>
+      </div>
+    <div class="col-md-4">
+      <div class="alert alert-danger error" *ngIf="name.touched && !name.valid">
+        <div *ngIf="name.errors.required">Name is required</div>
+        <div *ngIf="name.errors.minlength"> Name should be minimum 3 characters</div>
+        <div *ngIf="name.errors.maxlength"> Name should be maximum 10 characters</div>
+      </div>
+    </div> <!--close-->
+
+    <!-- Email Field-->
+    <div class="col-md-3"></div>
+    <div class="col-md-1 "><span> <i class="fa fa-envelope env " ></i></span></div>
+    <div class="col-md-4 ">
+      <div class="form-group">
+          <input type="text"
+              required
+              ngModel
+              name="email"
+              #email="ngModel"
+              class="form-control text" 
+              id="email" 
+              placeholder="Email">
+      </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-success error" *ngIf="email.touched && !email.valid">
+            <div *ngIf="email.errors.required">Email is required</div>
+          </div>
+    </div><!--close-->
+
+    <!-- Password Field-->
+    <div class="col-md-3"></div>
+    <div class="col-md-1 "><span> <i class="fa fa-lock lck " ></i></span></div>
+    <div class="col-md-4 ">
+      <div class="form-group">
+          <input type="password"
+              required
+              minlength="6"
+              maxlength="6"
+              ngModel 
+              name="password"
+              #password="ngModel"
+              class="form-control text"
+              id="password"
+              placeholder="Password">
+      </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-danger error" *ngIf="password.touched && !password.valid">
+            <div *ngIf="password.errors.required">Enter Password</div>
+            <div *ngIf="password.errors.minlength">Password should be 6 Chacacters</div>
+                                </div>
+    </div><!--close-->
+
+      <!-- Mobile Field-->
+    <div class="col-md-3"></div>
+    <div class="col-md-1 "><span> <i class="fa fa-mobile mbl" ></i></span></div>
+    <div class="col-md-4 ">
+      <div class="form-group">
+          <input type="text"
+              required
+              maxlength="10"
+              ngModel
+              name="mobile"
+              #mobile="ngModel"
+              class="form-control text"
+              id="mobile"
+              placeholder="Mobile">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info alert  error" *ngIf="mobile.touched && !mobile.valid">
+        <div *ngIf="mobile.errors.required">Enter Mobile No.</div>
+        <div *ngIf="mobile.errors.maxlength"></div>
+      </div>
+    </div><!--close-->
+      
+            <div class="col-md-12" style="text-align:center">
+              <select (change)="filterForeCasts($event.target.value)" class="drop_down">
+                  <option value="0">Select News</option>
+                  <option *ngFor="let summary of summaries" value={{summary}}>
+                      {{summary}}
+                  </option>
+              </select>
+            </div> 
+      </div> 
+
+              <div class="row">
+                <div class="col-md-12 signup_footer"></div>
+              </div>
+
+
+              <div class="row">
+          <div class="col-md-12 signup_button footer">
+        
+        <button   type="submit"  class="btn btn-default button">SignUp</button>
+          </div>
+        </div>
+        
+        
+
+            
+   </div>
+  </form>
+</div>
+
+  <div class="row">
+      <div class="col-md-12 bottom">
+          <button (click)="backToLogin()"  class="ben btn-link signup">&#8617; Back to Login</button>  
+      </div>
+    </div>
+</div><!-- Container close-->

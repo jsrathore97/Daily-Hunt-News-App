@@ -1,0 +1,56 @@
+<!-- Container Start-->
+<div class="container">
+ <div class="row">
+  <div class="col-md-12" class="header_border">
+        <div class="row">
+                <div class="col-md-10">
+                        <span> <h5>{{ data.title }}</h5> </span>
+                </div>
+                <div class="col-md-2">
+                        <h4>  <b>{{todaydate | date:'shortTime'}}</b><br/>
+                        <b>{{todaydate | date:'d/M/y'}}</b>  </h4>
+                 </div>
+        </div>
+  </div>              
+ </div>
+
+ <div class="row">
+        <div class="col-md-8" style="background-color:white; height:auto;">
+                <span >
+                <img style="height: 200px;  width: 343px; border-radius: 10px; padding-top: 5px;" src="{{ data.urlToImage }}">
+                </span>              
+                <p> {{ data.content}}   <a href="{{ data.url }}" class="btn btn-link"> Click here</a></p>
+        </div>
+
+        <div class="col-md-4" style="background-color:red">
+                <div class="newsDetails"> <h2> Author - </h2> <hr></div>
+                <span class="sizing"> <b> {{ data.author }} </b></span><br>
+                <div class="newsDetails"> <h2> Published at -</h2> <hr> </div>
+                <span class="sizing"> <b> {{ data.publishedAt }} </b></span> 
+        </div>
+ </div>
+
+<div class="row">
+
+        <div class="col-md-12" class="header_border">
+                <div class="row">
+                        <div class="col-md-7">
+                        <button (click)="backToNews()"  class="ben btn-link back_btn">&#8617; </button>
+                        </div>
+                        <div class="col-md-5">
+                                <span>
+                                <a href="https://www.twitter.com">  <i class="fa fa-twitter icon_margin"></i> </a>
+                                <a href="https://www.linkedin.com">   <i class="fa fa-linkedin icon_margin"></i> </a>
+                                <a href="https://www.facebook.com">   <i class="fa fa-facebook icon_margin"></i> </a>   
+                                </span>
+                        </div>
+                </div>
+        
+        
+        
+        </div>
+</div>
+
+
+       
+</div><!-- Container Close-->
