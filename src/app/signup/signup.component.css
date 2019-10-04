@@ -1,0 +1,74 @@
+.login_header{
+    background-color: black;
+    height:225px;
+}
+
+
+.text{
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid black;  
+}
+
+.usr{
+    font-size: 40px;
+    float: right;
+    
+}
+
+.env{
+    font-size: 30px;
+    padding-top: 5px;
+    float: right;
+}
+
+.lck{
+    font-size: 40px;
+    padding-top: 2px;
+    float: right;
+}
+
+.mbl{
+    font-size: 45px;
+    float: right;
+}
+
+.signup_footer{
+    background-color: black;
+    height:20px;
+    margin-top: 20px;
+    width: 100%
+}
+.footer{
+    background-color:red;
+}
+
+.signup_button{
+    text-align: center;
+}
+
+.button{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+
+.bottom{
+    background-color: black;
+    height:45px;
+}
+
+
+.signup{
+    background-color: black; 
+    color: white;
+     border: none;
+}
+
+.drop_down{
+    background-color: black; color:white;
+}
+
+.error{
+    border-radius:20px;
+}

@@ -1,0 +1,70 @@
+.login_header{
+    background-color: black;
+    height:350px;
+}
+.login_content{
+    background-color:white;
+}
+.border{
+    border:none;
+}
+.footer{
+    background-color:red;
+}
+
+.login_button{
+    text-align: center;
+}
+.button{
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+.bottom_foot{
+  background-color: black;
+  line-height: 50px;
+}
+
+.bottom_foot_content{
+    color: white;
+    text-align: center;
+
+    
+}
+.footer_row{
+    background-color:black;
+    height: 20px;    
+}
+.icon_envelope{
+    height:20px;
+}
+.email_form{
+   padding-top: 10px;
+   border: none;
+}
+.icon_email{
+    background-color:white;
+     text-align: right; 
+     font-size: 30px;
+     padding-top: 5px;
+}
+.icon_pass{
+    background-color:white;
+     text-align: right;
+      font-size: 40px;
+}
+.pass_form{
+    padding-top: 10px;
+
+}
+.signup{
+    background-color: black; 
+    color: white;
+     border: none;
+}
+.email_{
+    border:0px; border-radius: 0px; border-bottom: 1px solid black; font-size:20px;
+}
+.pass_{
+    border:0px; border-radius: 0px; border-bottom: 1px solid black; font-size:20px;
+}

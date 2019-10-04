@@ -1,0 +1,49 @@
+<!-- Loading Spinner-->
+<ng4-loading-spinner [loadingText]="'Loading News...'"></ng4-loading-spinner>
+ 
+<!-- Conatiner Start-->
+<div class="container">
+        <div class="row">
+                <div class="col-md-12" class="header_border">
+                <h1>   TODAYS NEWS  </h1>
+                </div>
+        </div>
+        
+        <div class="row">
+                <div class="col-md-12">
+                <div *ngFor="let data of showService.articles">
+                        <img   src="{{ data.urlToImage}}" class="img">
+                        <div class="well">
+                                <h3>  {{ data.title }}  </h3>
+                                <div class="col-md-6" style="text-align: justify">  <p> {{ data.description }}
+                                <button class="btn btn-link" (click)="newsDetailsPage(data)">Read more</button>              
+                                </p> 
+                                </div> <hr>
+                        </div> 
+                </div>
+                </div>
+        </div>    
+</div>  <!--  Container- Close -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
