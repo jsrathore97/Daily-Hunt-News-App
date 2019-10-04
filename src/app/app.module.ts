@@ -7,7 +7,11 @@ import { NewsServiceService } from './news-service.service';
 /* Modules */
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
+=======
+import { HttpModule } from '@angular/http';
+>>>>>>> 55c32ab9f16b603faad0320ddba89de239a1c7c7
 import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 
 /* Components */
@@ -30,7 +34,11 @@ import { SignupComponent } from './signup/signup.component';
     BrowserModule,
     Ng4LoadingSpinnerModule.forRoot(),
     FormsModule,
+<<<<<<< HEAD
     HttpClientModule,
+=======
+    HttpModule,
+>>>>>>> 55c32ab9f16b603faad0320ddba89de239a1c7c7
     RouterModule.forRoot([
       {
         path: '',
