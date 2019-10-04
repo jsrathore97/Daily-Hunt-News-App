@@ -12,7 +12,6 @@ export class NewsComponent implements OnInit {
     
   showService :any = [];
 
-<<<<<<< HEAD
   constructor( private myservice : NewsServiceService , private _router : Router) {
         this.myservice.getData()
         .subscribe((data)=> this.displayData(data))
@@ -20,16 +19,6 @@ export class NewsComponent implements OnInit {
 
    displayData(data){
      this.showService=data;
-=======
-  constructor( myservice : NewsServiceService , private _router : Router) {
-        myservice.getData().subscribe(res=>{
-          this.showService =res.json();
-          console.log(this.showService);
-         // console.log(JSON.parse(this.showService));
-        })
-
-
->>>>>>> 55c32ab9f16b603faad0320ddba89de239a1c7c7
    }
 
   
